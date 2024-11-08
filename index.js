@@ -4,7 +4,7 @@ app = express()
 port = 3000
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
+    res.send(`<h1>Dummy App</h1><p>Auto scaling app.</p`)
 })
 
 app.listen(port, () => {
